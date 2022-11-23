@@ -1,0 +1,300 @@
+body   {
+background-color: white;
+scroll-behavior: smooth;
+}
+
+form {
+    width:400px;
+    margin:auto;
+    margin-top: 30px;
+    }
+    input{
+    padding:4px 10px;
+    border:1;
+    font-size:16px;
+    }
+    .search {
+    width: 75%;
+    }
+    .submit{
+    width: 70px;
+    background-color: #3fa8e6;
+    color:#ffffff;
+    font-family: comic sans ms;
+    border: 0;
+    }
+
+   p {
+    margin-top: 7px;
+    margin-bottom: 3px;
+    font-family: comic sans ms;
+}
+
+.chapter {
+font-size: 50px;
+margin-left: 30px;
+border: 20px;
+color: #4cc6f7;
+;
+}
+.anchor{
+    font-size: 35px;
+   color: rgb(33, 11, 230);
+   text-decoration: underline;
+   margin-left: 20px;
+    
+}
+.anchor:hover {
+    color: #4cc6f7;
+}
+
+
+   
+   .scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+    }
+
+/* Style the header */
+.header {
+    /* margin-left: -6cm; */
+    margin-top: 0px;
+    margin-right: -8px;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+    font-family: comic sans ms;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+  /* Style the header: fixed position (always stay at the top) */
+  .header {
+   
+position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #3fa8e6;
+    height: 2cm;
+   
+
+
+  }
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 6px;
+    background: #1741cc;
+    width: 0%;
+    margin-top: 0.4cm;
+  }
+  
+
+
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 1300px;
+    height: auto;
+    margin-top: 100px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #86caf1;
+    overflow: hidden;
+    width: 1500px;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+  .btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    margin-left: 680px;
+    margin-top: 450px;
+  }
+  
+  .btn:hover {
+    background-color: #3fa8e6;
+    color: white;
+  }
+
+
+
+  .title {
+font-size: 30px;
+font-family: cursive;
+height: 90px;
+font-weight: bold;
+margin-left: 1cm;
+}
+
+  .tekst {
+font-family: comic sans ms;
+font-size: 20px;
+margin: 0.4cm;
+margin-left: 3cm;
+}
+
+
+
+
+
+a {
+color: #1741cc;
+font-size: larger;
+text-decoration: none;
+font-family: comic sans ms;
+
+
+}
+/* a:visited{
+    color: #92d625;
+} */
+a:hover{
+    color: #083a57;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: cursive
+}
+body {
+    display: flex;/*флексбокс сетка*/
+    flex-direction: column;/*направление главной оси*/
+    justify-content: flex-end;/*элементы в конце контейнера*/
+    min-height: 100vh;
+}
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #3fa8e6;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+
+.social{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li{
+    list-style: none;/*удалить черные маркеры*/
+}
+
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+    
+}
+
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+
+.obtekanie_tekstom_sprava{
+    float:right;/* Положение справа */
+  margin-left: 640px;
+    width: 300px; /* Ширина */
+    height:100px; /* Высота */
+    }
+
+
+
+
+   
+
+    #gradient{
+    background: #86caf1;
+    background: -moz-radial-gradient(center, ellipse cover, #86caf1, white);
+    background: -webkit-linear-gradient(top, #86caf1, white);
+    background: -o-linear-gradient(top, #86caf1, white);
+    background: -ms-linear-gradient(top, #86caf1, white);
+    width: 1348px;
+    height: 800px;
+    border: none;
+    }
+    
